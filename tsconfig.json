@@ -1,20 +1,42 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
+// 20210622203721
+// https://raw.githubusercontent.com/tr/barossa-platform_webapplication/master/tsconfig.json?token=ATLYE5DILY6DQ3LIRCRMHN3A3M3SS
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "outDir": "./tsc",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+    "skipLibCheck": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es5",
     "module": "es2020",
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "pod": [
+        "pod/dist"
+      ],
+      "pod/ngx": [
+        "pod/dist/ngx"
+      ],
+      "fef-dynamic-layout": [
+        "fef-dynamic-layout/dist"
+      ],
+      "fef-dynamic-layout/ng1": [
+        "fef-dynamic-layout/dist/ng1"
+      ],
+      "ping-pong": [
+        "ping-pong/dist"
+      ],
+      "ping-pong/ng1": [
+        "ping-pong/dist/ng1"
+      ]
+    }
   }
 }
